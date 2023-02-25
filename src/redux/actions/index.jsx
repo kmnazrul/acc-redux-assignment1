@@ -6,7 +6,7 @@ import {
   UPDATE_CONTENT,
 } from "./type";
 
-const API_URL = "http://localhost:5000/blogs";
+const API_URL = "https://tech-trends.onrender.com/blogs";
 
 export const addNewBlog = (data) => async (dispatch) => {
   try {

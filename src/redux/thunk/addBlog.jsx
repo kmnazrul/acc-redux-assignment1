@@ -2,7 +2,7 @@ import { addBlog } from "../actions/blogsActions";
 
 const addNewBlog = (blog) => {
   return async (dispatch, getState) => {
-    const res = await fetch(`http://localhost:5000/blogs`, {
+    const res = await fetch(`https://tech-trends.onrender.com/blogs`, {
       method: "POST",
       body: JSON.stringify(blog),
       headers: {

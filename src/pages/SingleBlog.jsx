@@ -13,7 +13,7 @@ const SingleBlog = () => {
   const { author, headline, image, body } = blog;
 
   useEffect(() => {
-    fetch(`http://localhost:5000/blogs/${id}`)
+    fetch(`https://tech-trends.onrender.com/blogs/${id}`)
       .then((res) => res.json())
       .then((data) => setBlog(data.result));
   }, []);

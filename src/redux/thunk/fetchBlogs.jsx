@@ -3,7 +3,7 @@ import { getBlogs } from "../actions/blogsActions";
 
 const getBlogsData = () => {
   return async (dispatch, getState) => {
-    const res = await axios.get("http://localhost:5000/blogs");
+    const res = await axios.get("https://tech-trends.onrender.com/blogs");
     // console.log(res.data.result);
 
     if (res.data.result.length) {
